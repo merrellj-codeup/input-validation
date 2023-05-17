@@ -59,8 +59,14 @@ input[type=email] {
 input[type=currency] {
   background-image: var(--gradient), url(../img/icons/price.svg);
 }
-input[type=numbers] {
+input[type=formattedNumber] {
   background-image: var(--gradient), url(../img/icons/calc.svg);
+}
+input[type=formattedDate] {
+  background-image: var(--gradient), url(../img/icons/cal.svg);
+}
+input[type=formattedTime] {
+  background-image: var(--gradient), url(../img/icons/time.svg);
 }
 
 button {

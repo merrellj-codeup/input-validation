@@ -56,8 +56,14 @@ input {
     &[type="currency"] {
         background-image: var(--gradient), url(../img/icons/price.svg);
     }
-    &[type="numbers"] {
+    &[type="formattedNumber"] {
         background-image: var(--gradient), url(../img/icons/calc.svg);
+    }
+    &[type="formattedDate"] {
+        background-image: var(--gradient), url(../img/icons/cal.svg);
+    }
+    &[type="formattedTime"] {
+        background-image: var(--gradient), url(../img/icons/time.svg);
     }
 
 }

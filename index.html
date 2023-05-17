@@ -18,7 +18,7 @@
                         <h2 class="text-center">How can we make sure that these inputs are formatted correctly?</h2>
                         <label>
                             <span>Comma-separated number</span>
-                            <input type="numbers" name="phone" id="phone" placeholder="Example: 1,542,730" required>
+                            <input type="formattedNumber" name="number" id="number" placeholder="Example: 1,542,730" required>
                         </label>
                         <label>
                             <span>Price</span>
@@ -31,6 +31,14 @@
                         <label>
                             <span>Phone Number</span>
                             <input type="tel" name="phone" id="phone" placeholder="Example: (210) 867-5309" required>
+                        </label>
+                        <label>
+                            <span>Date</span>
+                            <input type="formattedDate" name="date" id="date" placeholder="Example: April 23, 2023" required>
+                        </label>
+                        <label>
+                            <span>Time</span>
+                            <input type="formattedTime" name="time" id="time" placeholder="Example: 6:27pm" required>
                         </label>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
