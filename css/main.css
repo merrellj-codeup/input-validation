@@ -1,0 +1,79 @@
+body {
+  background-color: #eeeeee;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+form > * {
+  width: 100%;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+label > span {
+  font-size: 16px;
+  font-weight: 600;
+}
+label:has([required]) > span::after {
+  content: "*";
+  color: red;
+  font-size: 75%;
+  margin-left: 5px;
+}
+
+input {
+  --overlay: rgba(255,255,255,0.6);
+  --gradient: linear-gradient(to bottom, var(--overlay) 0%,var(--overlay) 100%);
+  min-width: 300px;
+  height: 60px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0 10px;
+  font-size: 16px;
+  background-repeat: no-repeat;
+  background-position: 10px 50%;
+  background-size: 23px;
+  padding-left: 45px;
+}
+input::-moz-placeholder {
+  color: #c5c5c5;
+}
+input::placeholder {
+  color: #c5c5c5;
+}
+input:focus {
+  outline: none;
+  border-color: #787878;
+}
+input[type=tel] {
+  background-image: var(--gradient), url(../img/icons/phone3.svg);
+}
+input[type=email] {
+  background-image: var(--gradient), url(../img/icons/email.svg);
+}
+input[type=currency] {
+  background-image: var(--gradient), url(../img/icons/price.svg);
+}
+input[type=numbers] {
+  background-image: var(--gradient), url(../img/icons/calc.svg);
+}
+
+button {
+  background-color: #787878;
+  color: #fff;
+  padding: 20px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background-color: #666666;
+}/*# sourceMappingURL=main.css.map */
